@@ -31,7 +31,7 @@ public interface RepositoryFilter {
 	<K> Map<K, JsonApiResponse> filterBulkRequest(RepositoryFilterContext context, RepositoryBulkRequestFilterChain<K> chain);
 
 	/**
-	 * Filter a result, ban be either a single entity or collection.
+	 * Filter a result, can be either a single entity or collection.
 	 *
 	 * @param context to access request and crnk information
 	 * @param chain   to proceed to the next filter resp. actual repository.
